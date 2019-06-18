@@ -1,0 +1,26 @@
+{
+  "name": "blogNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/www.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon ./bin/wwww.js",
+    "prd": "cross-env NODE_ENV=production nodemon ./bin/wwww.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkNightMan/blogNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkNightMan/blogNode/issues"
+  },
+  "homepage": "https://github.com/darkNightMan/blogNode#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.1"
+  }
+}
