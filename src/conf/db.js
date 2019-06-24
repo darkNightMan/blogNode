@@ -6,21 +6,21 @@ let MYSQL_CONF
 
 if (env === 'dev') {
   MYSQL_CONF = {
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     password: 'csdewang',
     database: 'blogs'
   }
 } 
 
-if (env === 'dev') {
+// if (env === 'production') {
   MYSQL_CONF = {
-    host: 'localhost',
+    host: '127.0.0.1',
     user: 'root',
     password: 'csdewang',
     database: 'blogs'
   }
-}
+// }
 
 module.exports = {
   MYSQL_CONF

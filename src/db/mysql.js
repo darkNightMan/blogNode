@@ -1,9 +1,8 @@
-import { resolve } from 'path';
-
 
 
 const mysql = require('mysql')
-const { MYSQL_CONF } = require('../conf/db')
+const { MYSQL_CONF }  = require('../conf/db')
+console.log(MYSQL_CONF, 'MYSQL_CONF')
 
 // 创建连接对象
 const con = mysql.createConnection(MYSQL_CONF)
@@ -13,6 +12,7 @@ con.connect()
 
 // 统一执行sql 函授
 function exec (sql) {
+  console.log(sql)
   const promise = new Promise((resolve, reject) => {
     con.query(sql, (err, result) => {
       if (err) {
