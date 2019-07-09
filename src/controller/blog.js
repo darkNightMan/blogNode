@@ -4,12 +4,12 @@ const getList = (author, keyword) => {
   // 先返回假数据
   let sql = `select * from blogs where 1=1 `
   if (author) {
-    sql += `and author=${author}`
+    sql += `and author='${author}'`
   }
   if (keyword) {
     sql += `and title  like '%${keyword}%'`
   }
-  sql += `order by createtime desc;` 
+  sql += ` order by createtime desc;` 
   return exec(sql)
 }
 

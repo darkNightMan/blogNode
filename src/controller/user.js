@@ -1,7 +1,7 @@
 
 const { exec } = require ('../db/mysql.js')
 
-const loginCheck = (username,  passwrod) => {
+const login = (username,  passwrod) => {
   const sql = `select username, realname, password from users where username='${username}'`
   return exec(sql).then(rows => {
     console.error(rows)
@@ -9,5 +9,5 @@ const loginCheck = (username,  passwrod) => {
   })
 } 
 module.exports = {
-  loginCheck
+  login
 }
